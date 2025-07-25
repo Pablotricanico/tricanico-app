@@ -1,8 +1,9 @@
+import { CiShoppingCart } from "react-icons/ci";
 const CartWidget = () => {
     return(
         <div>
-            <span>🛒</span>
-            <span style={{color:'blue'}}>5</span>
+            <CiShoppingCart />
+            <span style={{color:'black'}}>5</span>
         </div>
     )
 }
