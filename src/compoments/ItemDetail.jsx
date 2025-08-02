@@ -1,10 +1,13 @@
 import React from 'react'
-import Item from './Item'
 
 const ItemDetail = ({detalle}) => {
   return (
     <div>
-      <Item key={detalle.id} prod={detalle}/>
+      <h1>detalle de : {detalle.title}</h1>
+      <img src={detalle.img} alt="" />
+      <p>{detalle.description}</p>
+      <p>stock: {detalle.stock}</p>
+      <p>precio: {detalle.price}</p>
     </div>
   )
 }
