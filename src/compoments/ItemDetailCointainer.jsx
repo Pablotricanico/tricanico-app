@@ -18,7 +18,7 @@ const ItemDetailCointainer = () => {
         getOneProduct(id)
         .then((res)=> setDetalle(res))
         .finally(()=> setCargando(false))
-    },[])
+    },[id])
   
     return (
     <>
