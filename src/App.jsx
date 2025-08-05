@@ -8,19 +8,24 @@ import FetchApi from './compoments/examples/FetchApi';
 import ItemDetailCointainer from './compoments/ItemDetailCointainer';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import NotFound from './compoments/NotFound';
+import { CartContext, CartProvider } from './context/CartContext';
+import Cart from './compoments/Cart';
 
 function App() {
 
   return (
     <BrowserRouter>
-    
+    <CartProvider>
     <NavBar/>
     <Routes>
       <Route path='/' element={<ItemListContainer/>}/>
       <Route path='/categories/:category' element={<ItemListContainer/>}/>
       <Route path='/Item/:id' element={<ItemDetailCointainer/>}/>
+      <Route path='/cart' element={<Cart/>}/>
       <Route path='*' element={<NotFound/>}/>
-    </Routes>
+    </Routes>  
+    </CartProvider>
+    
 
     </BrowserRouter>
     

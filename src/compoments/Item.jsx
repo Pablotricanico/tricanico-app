@@ -17,7 +17,7 @@ const Item = ({prod}) => {
           ${prod.price},00
         </Card.Text>
         <Link className='btn btn-primary' to={'/Item/'+prod.id}> Ver Mas </Link>
-        <ItemCount/>
+        
       </Card.Body>
     </Card>
   )
