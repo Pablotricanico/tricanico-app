@@ -1,3 +1,52 @@
-.navbarcss{
-    
+.navbar-custom {
+  background-color: #343a40 !important; /* fondo oscuro */
+  padding: 0.75rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.brand-logo {
+  color: #ffc107 !important;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.navbar-custom .nav-link,
+.navbar-custom .dropdown-item {
+  color: #f8f9fa !important;
+  font-weight: 500;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .dropdown-item:hover {
+  color: #ffc107 !important;
+}
+
+.cart-link {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cart-link:hover {
+  color: #ffc107;
+}
+/* Dropdown menú (el fondo que se despliega) */
+.dropdown-menu {
+  background-color: #343a40; /* mismo fondo que navbar */
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Ítems del dropdown */
+.dropdown-item {
+  color: #f8f9fa !important;
+}
+
+/* Hover sobre ítems */
+.dropdown-item:hover {
+  background-color: #495057;
+  color: #ffc107 !important;
 }

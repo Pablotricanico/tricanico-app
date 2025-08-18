@@ -1,14 +1,14 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
-import CartView from './CartView'
-import EmptyCart from './EmptyCart'
+import { Table, Button, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Cart = () => {
-  const {cart}= useContext(CartContext)
+
   return (
-    <>
-      {cart.length ? <CartView/> : <EmptyCart/>}
-    </>
+    <div>
+
+    </div>
   )
 }
 
