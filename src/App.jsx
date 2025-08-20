@@ -12,6 +12,8 @@ import { CartContext, CartProvider } from './context/CartContext';
 import Cart from './compoments/Cart';
 import CartView from './compoments/CartView';
 import CheckOut from './compoments/CheckOut';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
       <Route path='/checkout' element={<CheckOut/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>  
+
+     <ToastContainer position="bottom-right" autoClose={2000} />
     </CartProvider>
     
 

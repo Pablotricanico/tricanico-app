@@ -6,27 +6,13 @@ import '../css/ItemDetail.css' // opcional para personalizar
 
 const ItemDetail = ({ detalle }) => {
   const { addItem } = useContext(CartContext)
-  const [showToast, setShowToast] = useState(false)
 
   const onAdd = (cantidad) => {
     addItem(detalle, cantidad)
-    setShowToast(true)
-    setTimeout(() =>setShowToast(false), 3000)
   }
 
   return (
     <Container className="my-5">
-      <ToastContainer position="bottom-end" className="p-3">
-        <Toast bg="success" onClose={() => setShowToast(false)} show={showToast} delay={3000} autohide>
-          <Toast.Header>
-            <strong className="me-auto">Carrito</strong>
-            <small>Ahora</small>
-          </Toast.Header>
-          <Toast.Body style={{ color: 'white' }}>
-            {detalle.title} fue agregado al carrito 🛒
-          </Toast.Body>
-        </Toast>
-      </ToastContainer>
 
       <Row className="justify-content-center">
         <Col xs={12} md={6}>

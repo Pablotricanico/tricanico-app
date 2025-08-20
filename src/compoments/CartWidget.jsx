@@ -7,7 +7,7 @@ const CartWidget = () => {
     return(
         <div>
             <CiShoppingCart />
-            <span style={{color:'black'}}>{cartQuantity ()}</span>
+            <span style={{color:'#ffc107', borderRadius:'1px red'}}>{cartQuantity ()}</span>
         </div>
     )
 }
