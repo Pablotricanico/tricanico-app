@@ -1,12 +1,54 @@
-# React + Vite
+# 🛒 BASTERMA - Ecommerce Educativo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue desarrollado como parte del curso de React.
+La finalidad es construir un ecommerce educativo para aprender y aplicar conceptos de frontend moderno: desde el uso de componentes hasta la integración con Firebase.
 
-Currently, two official plugins are available:
+### 🚀 Funcionalidades principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Listado de productos dinámico
 
-## Expanding the ESLint configuration
+2. Detalle de productos con stock
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Carrito de compras con Context API
+
+4. Checkout con validaciones
+
+5. Persistencia de datos en Firebase Firestore
+
+6. Notificaciones con React-Toastify
+
+7. Navegación entre vistas con React Router Dom
+
+### 🛠️ Tecnologías utilizadas
+
+1. React (Vite como entorno de desarrollo)
+
+2. React Router Dom (navegación)
+
+3. React Bootstrap (estilos y componentes UI)
+
+4. Firebase (base de datos y órdenes)
+
+5. React Toastify (notificaciones)
+
+### 📂 Instalación y ejecución
+
+1. Clonar el repositorio
+
+2. Hacer el comando `cd tricanico-app` para moverse a la carpeta del proyecto
+
+3. Instalar dependencias `npm install`
+
+4. Levantar app localmente `npm run dev`
+
+### 📸 Capturas de pantalla
+
+![app](/public/Captura.JPG)
+![app](/public/Captura1.JPG)
+![app](/public/Captura2.JPG)
+![app](/public/Captura3.JPG)
+
+### 👨‍💻 Autor
+
+Desarrollado por Pablo Tricanico como proyecto de práctica en React.
+
