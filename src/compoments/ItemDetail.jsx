@@ -3,12 +3,15 @@ import { CartContext } from "../context/CartContext"
 import ItemCount from './ItemCount'
 import { Container, Row, Col, Card, ToastContainer, Toast } from 'react-bootstrap'
 import '../css/ItemDetail.css' // opcional para personalizar
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ({ detalle }) => {
   const { addItem } = useContext(CartContext)
+  const [purchase,setPurchase] = useState(false)
 
   const onAdd = (cantidad) => {
     addItem(detalle, cantidad)
+    setPurchase(true)
   }
 
   return (
@@ -29,7 +32,12 @@ const ItemDetail = ({ detalle }) => {
             <p>{detalle.description}</p>
             <p><strong>Stock:</strong> {detalle.stock}</p>
             <p><strong>Precio:</strong> ${detalle.price}</p>
-            <ItemCount stock={detalle.stock} onAdd={onAdd} />
+            {purchase  
+            ? <div style={{width:'80%', display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+              <Link className='btn btn-secondary' to='/'>seguir comprando</Link>
+              <Link className='btn btn-success' to='/cart'>ir al carrito</Link>
+            </div>
+            : <ItemCount stock={detalle.stock} onAdd={onAdd} />}
           </Card>
         </Col>
       </Row>
