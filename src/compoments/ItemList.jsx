@@ -1,7 +1,6 @@
 import React from 'react'
 import Item from './Item'
 import { Container, Row, Col } from 'react-bootstrap'
-//import '../css/ItemList.css' // si querés crear un css aparte
 
 const ItemList = ({ data }) => {
   return (

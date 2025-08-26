@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { CartContext } from "../context/CartContext"
 import ItemCount from './ItemCount'
 import { Container, Row, Col, Card, ToastContainer, Toast } from 'react-bootstrap'
-import '../css/ItemDetail.css' // opcional para personalizar
+import '../css/ItemDetail.css'
 import { Link } from 'react-router-dom'
 
 const ItemDetail = ({ detalle }) => {

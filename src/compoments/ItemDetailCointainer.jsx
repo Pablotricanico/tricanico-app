@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { getOneProduct } from '../mock/AsyncService'
 import ItemDetail from './ItemDetail'
 import { Link, useParams } from 'react-router-dom'
 import LoaderComponent from './LoaderComponent'
-import { collection, doc, getDoc } from 'firebase/firestore'
+import {  doc, getDoc } from 'firebase/firestore'
 import { db } from '../service/firebase'
 
 const ItemDetailCointainer = () => {
@@ -14,15 +13,8 @@ const ItemDetailCointainer = () => {
     
     const {id} = useParams()
 
-
-    console.log(id,'useparams')
 //firebase
     useEffect(()=>{
-      setCargando(true)
-      //const prodCollection = collection(db, "productos")
-      //creamos la ref
-      //const docRef = doc(prodCollection, id)
-      //forma corta
       const docRef = doc(db, "productos", id)
       getDoc(docRef)
       .then((res)=>{
@@ -37,13 +29,6 @@ const ItemDetailCointainer = () => {
       .finally(()=> setCargando(false))
     },[id])
 
-    /*useEffect(()=>{
-      setCargando(true)
-        getOneProduct(id)
-        .then((res)=> setDetalle(res))
-        .finally(()=> setCargando(false))
-    },[id])
-  */
   if(invalid){
     return(
       <div>

@@ -1,35 +1,34 @@
 # 🛒 BASTERMA - Ecommerce Educativo
 
 Este proyecto fue desarrollado como parte del curso de React.
-La finalidad es construir un ecommerce educativo para aprender y aplicar conceptos de frontend moderno: desde el uso de componentes hasta la integración con Firebase.
+La finalidad es construir un ecommerce educativo para aprender y aplicar conceptos de frontend moderno, desde el uso de componentes reutilizables hasta la integración con Firebase.
 
 ### 🚀 Funcionalidades principales
 
-1. Listado de productos dinámico
+📦 Listado dinámico de productos
 
-2. Detalle de productos con stock
+🔎 Detalle de productos con control de stock
 
-3. Carrito de compras con Context API
+🛍️ Carrito de compras implementado con Context API
 
-4. Checkout con validaciones
+✅ Checkout con validaciones y persistencia de la orden en Firestore
 
-5. Persistencia de datos en Firebase Firestore
+🔔 Notificaciones con React-Toastify y SweetAlert
 
-6. Notificaciones con React-Toastify
+🌐 Navegación fluida con React Router Dom
 
-7. Navegación entre vistas con React Router Dom
+📱 Diseño responsive con React-Bootstrap
+🛠️ Tecnologías utilizadas
 
-### 🛠️ Tecnologías utilizadas
+⚛️ React (con Vite como entorno de desarrollo)
 
-1. React (Vite como entorno de desarrollo)
+🧭 React Router Dom (ruteo de la aplicación)
 
-2. React Router Dom (navegación)
+🎨 React Bootstrap (estilos y componentes de UI)
 
-3. React Bootstrap (estilos y componentes UI)
+🔥 Firebase (Firestore para productos y órdenes)
 
-4. Firebase (base de datos y órdenes)
-
-5. React Toastify (notificaciones)
+📢 React Toastify + SweetAlert (notificaciones y confirmaciones)
 
 ### 📂 Instalación y ejecución
 
@@ -50,5 +49,6 @@ La finalidad es construir un ecommerce educativo para aprender y aplicar concept
 
 ### 👨‍💻 Autor
 
-Desarrollado por Pablo Tricanico como proyecto de práctica en React.
+Proyecto desarrollado por Pablo Tricanico como práctica del curso de React.
+Este ecommerce tiene fines educativos y no comerciales.
 
