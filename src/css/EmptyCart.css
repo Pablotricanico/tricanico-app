@@ -1,0 +1,20 @@
+.empty-cart {
+  padding: 3rem 1rem;
+  background: #f8f9fa;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.empty-cart h2 {
+  font-weight: bold;
+  color: #343a40;
+}
+
+.empty-cart p {
+  font-size: 1.1rem;
+}
+
+.cart-icon {
+  color: #6c757d;
+}
