@@ -18,7 +18,8 @@ La finalidad es construir un ecommerce educativo para aprender y aplicar concept
 🌐 Navegación fluida con React Router Dom
 
 📱 Diseño responsive con React-Bootstrap
-🛠️ Tecnologías utilizadas
+
+# 🛠️ Tecnologías utilizadas
 
 ⚛️ React (con Vite como entorno de desarrollo)
 
