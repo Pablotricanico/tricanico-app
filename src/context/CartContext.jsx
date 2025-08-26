@@ -1,12 +1,19 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 
 //creamos el contexto
 export const CartContext = createContext()
 
+//localstorage
+const productosLocal = JSON.parse(localStorage.getItem('carrito')) || []
+
 //creamos el proveedor
 export const CartProvider = ({children}) => {
-    const [cart, setCart] = useState([])
+    const [cart, setCart] = useState(productosLocal)
+
+    useEffect(()=>{
+        localStorage.setItem('carrito', JSON.stringify(cart))
+    },[cart])
 
     //agregar item con validación de stock
     const addItem = (item, qty)=>{

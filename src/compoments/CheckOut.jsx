@@ -1,4 +1,4 @@
-import { addDoc, collection, serverTimestamp } from 'firebase/firestore'
+import { addDoc, collection, doc, getDoc, serverTimestamp, updateDoc } from 'firebase/firestore'
 import React, { useState, useContext } from 'react'
 import { db } from '../service/firebase'
 import { CartContext } from '../context/CartContext'
@@ -56,6 +56,13 @@ const CheckOut = () => {
     const ventas = collection(db, "orders")
     addDoc(ventas, order)
       .then((res) => {
+        cart.forEach((item) => {
+          const docRef = doc(db,"productos", item.id)
+          getDoc(docRef)
+          .then((dbDoc)=>{
+            updateDoc(docRef, {stock: dbDoc.data().stock - item.quantity})
+          })
+        });
         setOrderId(res.id)
         clear()
       })
